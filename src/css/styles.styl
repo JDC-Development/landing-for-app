@@ -1,8 +1,27 @@
 /*------GLOBAL------*/
-body,div,span,p,a,ul,li
+body,div,span,p,a,ul,li,h1,h2,h3,h4,h5,h6,hr
     margin 0;
     padding 0;
-
+h1
+    font-family RalewayMedium;
+    font-weight 800;
+    font-size 36px;
+    color white;
+h2
+    color #fff;
+    font-family RalewayLight;
+    font-size 36px;
+    font-weight 400;
+p
+    font-family RalewayLight;
+    font-size 14px;
+    font-weight 400;
+    color #9dc7d1;
+    margin 50px 0;
+section
+    position relative;
+    
+/*------HEAD------*/
 .logo
     font-family ProximaNovaExtrabold;
     font-size 30px;
@@ -33,6 +52,140 @@ nav
     top 0px;
     width 100%;
     z-index 999;
+    background white;
+    padding 20px 0;
     a:hover
         color #3c3d42;
+
+/*------SLIDE-------*/
+#slider
+    background-image url(../img/slider-bg.jpg);
+    background-size cover;
+    width 100%;
+    background-repeat no-repeat;
+    .content
+        display flex;
+        flex-direction column;
+        align-items flex-start;
+        justify-content flex-start;
+        margin 50px 0;
+        padding 100px 100px;
+        a
+            text-decoration none;
+            color #fff;
+            font-family RalewayBold;
+            font-size 21px;
+            font-weight 600;
+            text-transform uppercase;
+            padding 15px 60px;
+            border 3px solid #94b2b7;
+            border-radius 50px;
+        a:hover
+            background rgba(148,178,183,0.3);
+#tures
+    display flex;
+    flex-direction column;
+    justify-content center;
+    align-items center;
+    h1
+        color #636c6c;
+    p
+        color #afb8b8;
+        text-align center;
+    .hover-content
+        display flex;
+        justify-content space-around;
+        align-items flex-start;
+    ul
+        li
+            list-style-type none;
+            padding 45px 60px;
+            font-family RalewayLight;
+            font-size 20px;
+            color #b9c0c0;
+            cursor pointer;
+            border-right 1px solid #dbe2e2;
+    .content-hover-li
+        display flex;
+        flex-direction column;
+        align-items center;
+        margin 0 145px;
+        i
+            color #5dca88;
+            margin 80px 0;
+        h3
+            color #636c6c;
+            font-family RalewayBold;
+            font-size 24px;
+            font-weight 600;
+    li:hover
+        color #636c6c;
+        border-right 11px solid #5dca88;
+        i
+            color #5dca88;
+/*------Product------*/ 
+#product-feautures
+    margin-top 110px;
+    background #f2f9fe;
+    display flex;
+    justify-content space-around;
+    align-items flex-start;
+    padding 165px 0px;
+.descript-product
+    h2
+        color #5dca88;
+    hr
+        color #949c9c;
+        background #949c9c;
+        border 0px;
+        height 2px;
+        width 105px;
+        margin 20px 0px;
+    h3
+        color #8c9494;
+    a
+        text-decoration none;
+        color #636c6c;
+        font-family RalewayBold;
+        font-size 21px;
+        font-weight 600;
+        text-transform uppercase;
+        padding 15px 60px;
+        border 3px solid #aab2b5;
+        border-radius 50px;
+    a:hover
+        background rgba(170,178,181,0.3);
         
+#gallery
+    display flex;
+    flex-direction column;
+    justify-content center;
+    align-items center;
+    h2
+        color #636c6c;
+        margin-top 100px;
+    p
+        color #afb8b8;
+        text-align center;
+    #my-slider
+        display flex;
+        justify-content center;
+        align-items center;
+        position relative;
+        left 0;
+        width 2016px;
+        margin 0 auto;
+        transition 1s;
+        li
+            list-style-type none;
+            text-align center;
+            margin 0 20px;
+            p
+                font-size 14px;
+                color #8c9494;
+#slider-middle
+    display flex;
+    align-items center;
+#body-slider
+    width 1000px;
+    overflow hidden;
